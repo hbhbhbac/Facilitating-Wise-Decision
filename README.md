@@ -5,6 +5,7 @@
 ```shell
 ├─characteristics
 ├─detector
+│  └─modelResults
 ├─model
 │  ├─internalCsv
 │  └─modelSummarys
