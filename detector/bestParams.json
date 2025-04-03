@@ -1,0 +1,19 @@
+{
+    "xgb": {
+        "learning_rate": 0.1,
+        "n_estimators": 90
+    },
+    "svmRbf": {
+        "C": 2,
+        "gamma": 0.1
+    },
+    "knn": {
+        "n_neighbors": 17
+    },
+    "dt": {
+        "criterion": "gini"
+    },
+    "rf": {
+        "n_estimators": 100
+    }
+}
