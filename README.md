@@ -1,4 +1,4 @@
-# Understanding the Incentive Mechanism of Bounty Issues in Open Source Communities
+# Facilitating Wise Decision-Making for Bounty Backers in Open Source Software Communities
 
 ## Directory Structure
 

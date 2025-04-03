@@ -1,0 +1,55 @@
+=== Bootstrap Iteration 196 ===
+
+Family: gaussian 
+Link function: identity 
+
+Formula:
+value_in_usdt ~ project_length_Hours + project_length_Weeks + 
+    bounty_type_Bug + bounty_type_Code_Review + bounty_type_Design + 
+    bounty_type_Documentation + bounty_type_Feature + bounty_type_Improvement + 
+    bounty_type_Other + bounty_type_Project + bounty_type_Security + 
+    issue_timeout + experience_level_Advanced + experience_level_Intermediate + 
+    repo_language_JavaScript + repo_language_TypeScript + repo_language_Others + 
+    repo_watchers_count + repo_size + code_deletions + code_changed_files + 
+    code_finish_time + issue_len_description + fulfillments_len + 
+    bounty_num + owner_followers
+
+Parametric coefficients:
+                               Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                   -316.8999   218.9504  -1.447 0.148449    
+project_length_Hours          -341.9726    61.1261  -5.595 3.72e-08 ***
+project_length_Weeks           657.3373   191.6428   3.430 0.000656 ***
+bounty_type_Bug                 44.4638    81.5554   0.545 0.585871    
+bounty_type_Code_Review       -791.6989   264.7881  -2.990 0.002934 ** 
+bounty_type_Design            -691.1427   236.7419  -2.919 0.003672 ** 
+bounty_type_Documentation       54.0398   101.2229   0.534 0.593679    
+bounty_type_Feature             21.2037    53.3972   0.397 0.691475    
+bounty_type_Improvement         17.7189    69.0431   0.257 0.797570    
+bounty_type_Other             -201.2254   114.7351  -1.754 0.080099 .  
+bounty_type_Project            255.7506   288.3780   0.887 0.375599    
+bounty_type_Security          -144.6794   295.1030  -0.490 0.624169    
+issue_timeout                  -10.2996     6.7700  -1.521 0.128831    
+experience_level_Advanced      255.2689    88.3727   2.889 0.004045 ** 
+experience_level_Intermediate   48.7819    56.8563   0.858 0.391328    
+repo_language_JavaScript         1.0826    90.5941   0.012 0.990470    
+repo_language_TypeScript       -31.3769    90.0050  -0.349 0.727533    
+repo_language_Others            11.8133    87.0151   0.136 0.892067    
+repo_watchers_count             -7.2326    12.0123  -0.602 0.547390    
+repo_size                      -15.1504    10.0660  -1.505 0.132955    
+code_deletions                  31.9866     9.1312   3.503 0.000503 ***
+code_changed_files               0.8573    20.8879   0.041 0.967278    
+code_finish_time                32.4138    18.0949   1.791 0.073872 .  
+issue_len_description           78.8944    15.9165   4.957 9.96e-07 ***
+fulfillments_len               430.9061    93.8076   4.594 5.58e-06 ***
+bounty_num                     -26.5204    11.9341  -2.222 0.026733 *  
+owner_followers                 -4.1253     5.9812  -0.690 0.490710    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+
+R-sq.(adj) =  0.363   Deviance explained = 39.6%
+-REML = 3612.3  Scale est. = 1.564e+05  n = 507
+
+Bootstrap R²: 0.3630376
+Original Data R²: 0.296073
+Optimism: 0.06696464
