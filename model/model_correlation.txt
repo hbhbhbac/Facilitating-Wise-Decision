@@ -1,0 +1,622 @@
+                              project_length_Hours project_length_Days
+project_length_Hours                   1.000000000       -0.9372469486
+project_length_Days                   -0.937246949        1.0000000000
+project_length_Weeks                  -0.301527245       -0.0498329867
+bounty_type_Bug                        0.002134915       -0.0129616889
+bounty_type_Code_Review               -0.105866019        0.1129542420
+bounty_type_Design                     0.037446753       -0.0350968548
+bounty_type_Documentation              0.044595883       -0.0361696141
+bounty_type_Feature                   -0.222557430        0.2235244854
+bounty_type_Improvement                0.049006627       -0.0525809909
+bounty_type_Other                     -0.033510484        0.0442389068
+bounty_type_Project                    0.018667790       -0.0174963291
+bounty_type_Security                  -0.087457877        0.0957421555
+issue_timeout                          0.178514208       -0.1520526171
+experience_level_Beginner              0.112821704       -0.0975485171
+experience_level_Advanced             -0.147191694        0.1439630033
+experience_level_Intermediate         -0.010928339       -0.0005387086
+repo_forks_count                       0.077372241       -0.0669235318
+repo_language_JavaScript              -0.007027098       -0.0390787491
+repo_language_TypeScript               0.140274416       -0.1238449405
+repo_language_Others                  -0.135246319        0.1593374497
+repo_stargazers_count                  0.017741140       -0.0119184612
+repo_open_issues_count                 0.110517194       -0.1061571553
+code_additions                        -0.320947843        0.2997509798
+code_deletions                        -0.202552065        0.1593175193
+code_changed_files                    -0.253847210        0.2265000701
+code_finish_time                      -0.071351195        0.0713402612
+issue_len_description                 -0.194410678        0.1635272245
+fulfillments_len                      -0.086431870        0.0439645927
+bounty_num                             0.031621639       -0.0009893675
+bounty_change_num                      0.039202686       -0.0045069170
+code_smells_log                       -0.073471023        0.0743835200
+ncloc_log                             -0.073690890        0.0782024062
+complexity_log                        -0.081533145        0.0850241018
+                              project_length_Weeks bounty_type_Bug
+project_length_Hours                  -0.301527245     0.002134915
+project_length_Days                   -0.049832987    -0.012961689
+project_length_Weeks                   1.000000000     0.029329359
+bounty_type_Bug                        0.029329359     1.000000000
+bounty_type_Code_Review               -0.005628847    -0.011918830
+bounty_type_Design                    -0.011291216    -0.023908641
+bounty_type_Documentation             -0.028836411    -0.061059799
+bounty_type_Feature                    0.026270984    -0.218189905
+bounty_type_Improvement                0.003407280    -0.097296202
+bounty_type_Other                     -0.024983979    -0.052902449
+bounty_type_Project                   -0.005628847    -0.011918830
+bounty_type_Security                  -0.011291216    -0.023908641
+issue_timeout                         -0.095554697    -0.016030892
+experience_level_Beginner             -0.056424040     0.219874822
+experience_level_Advanced              0.027952816     0.020307335
+experience_level_Intermediate          0.032777468    -0.205030891
+repo_forks_count                      -0.038625371     0.066487056
+repo_language_JavaScript               0.126993350     0.159599340
+repo_language_TypeScript              -0.063152768    -0.113980089
+repo_language_Others                  -0.048307548    -0.054959257
+repo_stargazers_count                 -0.018227606     0.074901573
+repo_open_issues_count                -0.026281699     0.159895523
+code_additions                         0.099663353    -0.188084512
+code_deletions                         0.144544858     0.005857615
+code_changed_files                     0.107763847    -0.118872796
+code_finish_time                       0.009300110     0.038550009
+issue_len_description                  0.109711983    -0.114362696
+fulfillments_len                       0.127359932    -0.044391042
+bounty_num                            -0.087874954     0.063272853
+bounty_change_num                     -0.099971893    -0.014473786
+code_smells_log                        0.007050325    -0.074998075
+ncloc_log                             -0.002762935    -0.083786753
+complexity_log                         0.001046768    -0.084763258
+                              bounty_type_Code_Review bounty_type_Design
+project_length_Hours                    -0.1058660186        0.037446753
+project_length_Days                      0.1129542420       -0.035096855
+project_length_Weeks                    -0.0056288472       -0.011291216
+bounty_type_Bug                         -0.0119188301       -0.023908641
+bounty_type_Code_Review                  1.0000000000       -0.003964339
+bounty_type_Design                      -0.0039643386        1.000000000
+bounty_type_Documentation               -0.0101244450       -0.020309185
+bounty_type_Feature                     -0.0361784958       -0.072572447
+bounty_type_Improvement                 -0.0161328739       -0.032361825
+bounty_type_Other                       -0.0087718588       -0.017595957
+bounty_type_Project                     -0.0019762846       -0.003964339
+bounty_type_Security                    -0.0039643386       -0.007952286
+issue_timeout                            0.0549849795       -0.062842104
+experience_level_Beginner                0.0997597339        0.140150463
+experience_level_Advanced               -0.0121056403        0.063657130
+experience_level_Intermediate           -0.0802725619       -0.161023175
+repo_forks_count                        -0.0657056595       -0.052874307
+repo_language_JavaScript                -0.0352917003       -0.025012526
+repo_language_TypeScript                -0.0221728956       -0.044477838
+repo_language_Others                     0.0679386831        0.087623545
+repo_stargazers_count                   -0.0715238158       -0.033262572
+repo_open_issues_count                  -0.0628156891       -0.091668211
+code_additions                           0.0580221115       -0.031382581
+code_deletions                           0.0638854778       -0.041943277
+code_changed_files                       0.0565340818        0.042220317
+code_finish_time                        -0.0006074907        0.052856739
+issue_len_description                   -0.0536390192        0.032919342
+fulfillments_len                         0.1029595041        0.179647810
+bounty_num                              -0.0694568839       -0.094510933
+bounty_change_num                       -0.0531620157       -0.106640630
+code_smells_log                         -0.0336997005        0.032928912
+ncloc_log                               -0.0343187275        0.026637293
+complexity_log                          -0.0340712252        0.027060598
+                              bounty_type_Documentation bounty_type_Feature
+project_length_Hours                         0.04459588         -0.22255743
+project_length_Days                         -0.03616961          0.22352449
+project_length_Weeks                        -0.02883641          0.02627098
+bounty_type_Bug                             -0.06105980         -0.21818991
+bounty_type_Code_Review                     -0.01012445         -0.03617850
+bounty_type_Design                          -0.02030918         -0.07257245
+bounty_type_Documentation                    1.00000000         -0.18534132
+bounty_type_Feature                         -0.18534132          1.00000000
+bounty_type_Improvement                     -0.08264822         -0.29533354
+bounty_type_Other                           -0.04493796         -0.16058044
+bounty_type_Project                         -0.01012445         -0.03617850
+bounty_type_Security                        -0.02030918         -0.07257245
+issue_timeout                               -0.12633866          0.09047921
+experience_level_Beginner                    0.07002692         -0.09175410
+experience_level_Advanced                   -0.02608250         -0.01501429
+experience_level_Intermediate               -0.04582926          0.08947166
+repo_forks_count                            -0.07646483         -0.02747424
+repo_language_JavaScript                    -0.14338412         -0.28203982
+repo_language_TypeScript                    -0.09078288          0.47165809
+repo_language_Others                         0.14921936          0.02145399
+repo_stargazers_count                       -0.12035301         -0.10670156
+repo_open_issues_count                      -0.15449668         -0.16488034
+code_additions                               0.06635889          0.09694770
+code_deletions                              -0.08582096         -0.03968842
+code_changed_files                          -0.13883087          0.14353886
+code_finish_time                             0.07456726         -0.08983445
+issue_len_description                       -0.01276650          0.10350052
+fulfillments_len                            -0.06760707          0.09716683
+bounty_num                                  -0.17244688          0.05373097
+bounty_change_num                           -0.14662422          0.04327640
+code_smells_log                             -0.14779624          0.28251508
+ncloc_log                                   -0.15097015          0.29433863
+complexity_log                              -0.15714441          0.30402251
+                              bounty_type_Improvement bounty_type_Other
+project_length_Hours                      0.049006627      -0.033510484
+project_length_Days                      -0.052580991       0.044238907
+project_length_Weeks                      0.003407280      -0.024983979
+bounty_type_Bug                          -0.097296202      -0.052902449
+bounty_type_Code_Review                  -0.016132874      -0.008771859
+bounty_type_Design                       -0.032361825      -0.017595957
+bounty_type_Documentation                -0.082648216      -0.044937962
+bounty_type_Feature                      -0.295333535      -0.160580444
+bounty_type_Improvement                   1.000000000      -0.071606738
+bounty_type_Other                        -0.071606738       1.000000000
+bounty_type_Project                      -0.016132874      -0.008771859
+bounty_type_Security                     -0.032361825      -0.017595957
+issue_timeout                             0.059411641      -0.085479278
+experience_level_Beginner                 0.136069634       0.051733166
+experience_level_Advanced                 0.046754620       0.192060232
+experience_level_Intermediate            -0.147332925      -0.160264918
+repo_forks_count                         -0.040254229      -0.211429023
+repo_language_JavaScript                  0.078202038      -0.071339639
+repo_language_TypeScript                 -0.165602592      -0.098415739
+repo_language_Others                      0.084732300      -0.083781263
+repo_stargazers_count                     0.002600879      -0.192862570
+repo_open_issues_count                    0.036625574      -0.082333041
+code_additions                           -0.004203107      -0.037753771
+code_deletions                            0.086897336       0.014491602
+code_changed_files                        0.013931705      -0.028269775
+code_finish_time                          0.078273751       0.002909257
+issue_len_description                     0.026364158       0.089879029
+fulfillments_len                         -0.093132773       0.168716598
+bounty_num                               -0.112713031      -0.144859775
+bounty_change_num                        -0.090040622      -0.169282388
+code_smells_log                          -0.140289204      -0.100800909
+ncloc_log                                -0.122454569      -0.107123557
+complexity_log                           -0.115794356      -0.106945869
+                              bounty_type_Project bounty_type_Security
+project_length_Hours                  0.018667790         -0.087457877
+project_length_Days                  -0.017496329          0.095742155
+project_length_Weeks                 -0.005628847         -0.011291216
+bounty_type_Bug                      -0.011918830         -0.023908641
+bounty_type_Code_Review              -0.001976285         -0.003964339
+bounty_type_Design                   -0.003964339         -0.007952286
+bounty_type_Documentation            -0.010124445         -0.020309185
+bounty_type_Feature                  -0.036178496         -0.072572447
+bounty_type_Improvement              -0.016132874         -0.032361825
+bounty_type_Other                    -0.008771859         -0.017595957
+bounty_type_Project                   1.000000000         -0.003964339
+bounty_type_Security                 -0.003964339          1.000000000
+issue_timeout                        -0.053921734         -0.014853588
+experience_level_Beginner            -0.019810444         -0.039738865
+experience_level_Advanced            -0.012105640          0.239538138
+experience_level_Intermediate         0.024619677         -0.108420888
+repo_forks_count                     -0.009626643         -0.040920115
+repo_language_JavaScript             -0.035291700          0.066549572
+repo_language_TypeScript             -0.022172896         -0.044477838
+repo_language_Others                  0.067938683         -0.009693295
+repo_stargazers_count                 0.025216730         -0.052576323
+repo_open_issues_count                0.019563037         -0.053192089
+code_additions                       -0.039947161          0.098032479
+code_deletions                       -0.010030329         -0.032811715
+code_changed_files                   -0.042324164          0.068809155
+code_finish_time                     -0.004404307         -0.056969511
+issue_len_description                -0.040267252          0.067362727
+fulfillments_len                     -0.018036701          0.035803934
+bounty_num                            0.059273927         -0.067300931
+bounty_change_num                     0.060425431         -0.048515287
+code_smells_log                       0.067399401         -0.031186641
+ncloc_log                             0.077605163         -0.041080241
+complexity_log                        0.066412947         -0.040677630
+                              issue_timeout experience_level_Beginner
+project_length_Hours             0.17851421               0.112821704
+project_length_Days             -0.15205262              -0.097548517
+project_length_Weeks            -0.09555470              -0.056424040
+bounty_type_Bug                 -0.01603089               0.219874822
+bounty_type_Code_Review          0.05498498               0.099759734
+bounty_type_Design              -0.06284210               0.140150463
+bounty_type_Documentation       -0.12633866               0.070026922
+bounty_type_Feature              0.09047921              -0.091754095
+bounty_type_Improvement          0.05941164               0.136069634
+bounty_type_Other               -0.08547928               0.051733166
+bounty_type_Project             -0.05392173              -0.019810444
+bounty_type_Security            -0.01485359              -0.039738865
+issue_timeout                    1.00000000              -0.098351439
+experience_level_Beginner       -0.09835144               1.000000000
+experience_level_Advanced       -0.07406054              -0.121347961
+experience_level_Intermediate    0.13057810              -0.804658941
+repo_forks_count                -0.07349871               0.041174060
+repo_language_JavaScript        -0.09431231               0.180042126
+repo_language_TypeScript         0.39104392              -0.222262978
+repo_language_Others            -0.20106816               0.032612374
+repo_stargazers_count           -0.12831517               0.050828492
+repo_open_issues_count          -0.04810765               0.071312965
+code_additions                  -0.24512467              -0.020500205
+code_deletions                  -0.22404125               0.027659044
+code_changed_files              -0.14543625              -0.004084342
+code_finish_time                -0.01274946              -0.048462572
+issue_len_description           -0.16748883               0.007343897
+fulfillments_len                -0.04609860               0.007682865
+bounty_num                       0.02523372               0.006710676
+bounty_change_num                0.07870134              -0.039447475
+code_smells_log                  0.08775666              -0.078046732
+ncloc_log                        0.08915920              -0.084542282
+complexity_log                   0.09565730              -0.090233356
+                              experience_level_Advanced
+project_length_Hours                       -0.147191694
+project_length_Days                         0.143963003
+project_length_Weeks                        0.027952816
+bounty_type_Bug                             0.020307335
+bounty_type_Code_Review                    -0.012105640
+bounty_type_Design                          0.063657130
+bounty_type_Documentation                  -0.026082503
+bounty_type_Feature                        -0.015014293
+bounty_type_Improvement                     0.046754620
+bounty_type_Other                           0.192060232
+bounty_type_Project                        -0.012105640
+bounty_type_Security                        0.239538138
+issue_timeout                              -0.074060535
+experience_level_Beginner                  -0.121347961
+experience_level_Advanced                   1.000000000
+experience_level_Intermediate              -0.491705884
+repo_forks_count                           -0.118576943
+repo_language_JavaScript                   -0.008476938
+repo_language_TypeScript                   -0.096859923
+repo_language_Others                        0.025588944
+repo_stargazers_count                      -0.089736181
+repo_open_issues_count                     -0.045953617
+code_additions                              0.088573824
+code_deletions                              0.050799664
+code_changed_files                          0.082870590
+code_finish_time                            0.034367535
+issue_len_description                       0.150466321
+fulfillments_len                            0.023368028
+bounty_num                                 -0.145072290
+bounty_change_num                          -0.162604367
+code_smells_log                            -0.075243632
+ncloc_log                                  -0.083936204
+complexity_log                             -0.078304765
+                              experience_level_Intermediate repo_forks_count
+project_length_Hours                          -0.0109283389      0.077372241
+project_length_Days                           -0.0005387086     -0.066923532
+project_length_Weeks                           0.0327774679     -0.038625371
+bounty_type_Bug                               -0.2050308910      0.066487056
+bounty_type_Code_Review                       -0.0802725619     -0.065705660
+bounty_type_Design                            -0.1610231748     -0.052874307
+bounty_type_Documentation                     -0.0458292581     -0.076464828
+bounty_type_Feature                            0.0894716584     -0.027474237
+bounty_type_Improvement                       -0.1473329253     -0.040254229
+bounty_type_Other                             -0.1602649185     -0.211429023
+bounty_type_Project                            0.0246196775     -0.009626643
+bounty_type_Security                          -0.1084208877     -0.040920115
+issue_timeout                                  0.1305781021     -0.073498709
+experience_level_Beginner                     -0.8046589412      0.041174060
+experience_level_Advanced                     -0.4917058836     -0.118576943
+experience_level_Intermediate                  1.0000000000      0.034808005
+repo_forks_count                               0.0348080047      1.000000000
+repo_language_JavaScript                      -0.1528703573      0.293586948
+repo_language_TypeScript                       0.2529164048     -0.015022048
+repo_language_Others                          -0.0439152375     -0.020049932
+repo_stargazers_count                          0.0090873881      0.950818391
+repo_open_issues_count                        -0.0350713732      0.800134225
+code_additions                                -0.0349974276     -0.090763415
+code_deletions                                -0.0546499437     -0.014353882
+code_changed_files                            -0.0459867146      0.009145337
+code_finish_time                               0.0219563031     -0.069024401
+issue_len_description                         -0.0964449752      0.054274480
+fulfillments_len                              -0.0207175133     -0.166790842
+bounty_num                                     0.0808892022      0.656065879
+bounty_change_num                              0.1318681171      0.638518941
+code_smells_log                                0.1134735953      0.145047968
+ncloc_log                                      0.1243713073      0.140779654
+complexity_log                                 0.1259952801      0.145925138
+                              repo_language_JavaScript repo_language_TypeScript
+project_length_Hours                      -0.007027098               0.14027442
+project_length_Days                       -0.039078749              -0.12384494
+project_length_Weeks                       0.126993350              -0.06315277
+bounty_type_Bug                            0.159599340              -0.11398009
+bounty_type_Code_Review                   -0.035291700              -0.02217290
+bounty_type_Design                        -0.025012526              -0.04447784
+bounty_type_Documentation                 -0.143384116              -0.09078288
+bounty_type_Feature                       -0.282039816               0.47165809
+bounty_type_Improvement                    0.078202038              -0.16560259
+bounty_type_Other                         -0.071339639              -0.09841574
+bounty_type_Project                       -0.035291700              -0.02217290
+bounty_type_Security                       0.066549572              -0.04447784
+issue_timeout                             -0.094312311               0.39104392
+experience_level_Beginner                  0.180042126              -0.22226298
+experience_level_Advanced                 -0.008476938              -0.09685992
+experience_level_Intermediate             -0.152870357               0.25291640
+repo_forks_count                           0.293586948              -0.01502205
+repo_language_JavaScript                   1.000000000              -0.39595471
+repo_language_TypeScript                  -0.395954708               1.00000000
+repo_language_Others                      -0.519464004              -0.32636628
+repo_stargazers_count                      0.270283641              -0.14391251
+repo_open_issues_count                     0.361867418              -0.03585682
+code_additions                             0.079960358              -0.29245258
+code_deletions                             0.248852553              -0.26914150
+code_changed_files                         0.115406476              -0.13415507
+code_finish_time                          -0.085167659              -0.02601450
+issue_len_description                      0.035704626              -0.13798931
+fulfillments_len                          -0.183596209               0.10989130
+bounty_num                                 0.358424357               0.07190487
+bounty_change_num                          0.288222491               0.14276082
+code_smells_log                           -0.149895010               0.30407237
+ncloc_log                                 -0.176577009               0.30787367
+complexity_log                            -0.176642078               0.31857375
+                              repo_language_Others repo_stargazers_count
+project_length_Hours                  -0.135246319           0.017741140
+project_length_Days                    0.159337450          -0.011918461
+project_length_Weeks                  -0.048307548          -0.018227606
+bounty_type_Bug                       -0.054959257           0.074901573
+bounty_type_Code_Review                0.067938683          -0.071523816
+bounty_type_Design                     0.087623545          -0.033262572
+bounty_type_Documentation              0.149219358          -0.120353006
+bounty_type_Feature                    0.021453993          -0.106701556
+bounty_type_Improvement                0.084732300           0.002600879
+bounty_type_Other                     -0.083781263          -0.192862570
+bounty_type_Project                    0.067938683           0.025216730
+bounty_type_Security                  -0.009693295          -0.052576323
+issue_timeout                         -0.201068158          -0.128315174
+experience_level_Beginner              0.032612374           0.050828492
+experience_level_Advanced              0.025588944          -0.089736181
+experience_level_Intermediate         -0.043915237           0.009087388
+repo_forks_count                      -0.020049932           0.950818391
+repo_language_JavaScript              -0.519464004           0.270283641
+repo_language_TypeScript              -0.326366285          -0.143912514
+repo_language_Others                   1.000000000           0.070933525
+repo_stargazers_count                  0.070933525           1.000000000
+repo_open_issues_count                -0.180398811           0.774047404
+code_additions                         0.207346235          -0.063858473
+code_deletions                         0.038747493           0.025445338
+code_changed_files                     0.127291039           0.015824416
+code_finish_time                       0.052150400          -0.040886838
+issue_len_description                  0.094290495           0.048889006
+fulfillments_len                      -0.067948053          -0.178459837
+bounty_num                            -0.269759752           0.592341911
+bounty_change_num                     -0.261352108           0.564878416
+code_smells_log                        0.083518532           0.136464276
+ncloc_log                              0.112040536           0.132085184
+complexity_log                         0.101391893           0.139073765
+                              repo_open_issues_count code_additions
+project_length_Hours                      0.11051719   -0.320947843
+project_length_Days                      -0.10615716    0.299750980
+project_length_Weeks                     -0.02628170    0.099663353
+bounty_type_Bug                           0.15989552   -0.188084512
+bounty_type_Code_Review                  -0.06281569    0.058022112
+bounty_type_Design                       -0.09166821   -0.031382581
+bounty_type_Documentation                -0.15449668    0.066358888
+bounty_type_Feature                      -0.16488034    0.096947700
+bounty_type_Improvement                   0.03662557   -0.004203107
+bounty_type_Other                        -0.08233304   -0.037753771
+bounty_type_Project                       0.01956304   -0.039947161
+bounty_type_Security                     -0.05319209    0.098032479
+issue_timeout                            -0.04810765   -0.245124665
+experience_level_Beginner                 0.07131297   -0.020500205
+experience_level_Advanced                -0.04595362    0.088573824
+experience_level_Intermediate            -0.03507137   -0.034997428
+repo_forks_count                          0.80013422   -0.090763415
+repo_language_JavaScript                  0.36186742    0.079960358
+repo_language_TypeScript                 -0.03585682   -0.292452581
+repo_language_Others                     -0.18039881    0.207346235
+repo_stargazers_count                     0.77404740   -0.063858473
+repo_open_issues_count                    1.00000000   -0.194065182
+code_additions                           -0.19406518    1.000000000
+code_deletions                           -0.02017247    0.545540348
+code_changed_files                       -0.06686970    0.759867681
+code_finish_time                         -0.06190041   -0.004252577
+issue_len_description                    -0.02628250    0.330010672
+fulfillments_len                         -0.16082686    0.044826290
+bounty_num                                0.64406291   -0.139922519
+bounty_change_num                         0.56291139   -0.120887880
+code_smells_log                           0.13572546   -0.078616363
+ncloc_log                                 0.13417598   -0.088781446
+complexity_log                            0.13509414   -0.084950551
+                              code_deletions code_changed_files
+project_length_Hours            -0.202552065       -0.253847210
+project_length_Days              0.159317519        0.226500070
+project_length_Weeks             0.144544858        0.107763847
+bounty_type_Bug                  0.005857615       -0.118872796
+bounty_type_Code_Review          0.063885478        0.056534082
+bounty_type_Design              -0.041943277        0.042220317
+bounty_type_Documentation       -0.085820963       -0.138830869
+bounty_type_Feature             -0.039688424        0.143538855
+bounty_type_Improvement          0.086897336        0.013931705
+bounty_type_Other                0.014491602       -0.028269775
+bounty_type_Project             -0.010030329       -0.042324164
+bounty_type_Security            -0.032811715        0.068809155
+issue_timeout                   -0.224041249       -0.145436248
+experience_level_Beginner        0.027659044       -0.004084342
+experience_level_Advanced        0.050799664        0.082870590
+experience_level_Intermediate   -0.054649944       -0.045986715
+repo_forks_count                -0.014353882        0.009145337
+repo_language_JavaScript         0.248852553        0.115406476
+repo_language_TypeScript        -0.269141504       -0.134155075
+repo_language_Others             0.038747493        0.127291039
+repo_stargazers_count            0.025445338        0.015824416
+repo_open_issues_count          -0.020172471       -0.066869700
+code_additions                   0.545540348        0.759867681
+code_deletions                   1.000000000        0.587881650
+code_changed_files               0.587881650        1.000000000
+code_finish_time                 0.001358448       -0.069424520
+issue_len_description            0.170576598        0.295378360
+fulfillments_len                 0.030733114        0.069919538
+bounty_num                      -0.091070983       -0.023155677
+bounty_change_num               -0.110305408       -0.029001392
+code_smells_log                 -0.115012785       -0.013980393
+ncloc_log                       -0.117640291       -0.014709693
+complexity_log                  -0.114440246       -0.010801100
+                              code_finish_time issue_len_description
+project_length_Hours             -0.0713511950          -0.194410678
+project_length_Days               0.0713402612           0.163527224
+project_length_Weeks              0.0093001095           0.109711983
+bounty_type_Bug                   0.0385500093          -0.114362696
+bounty_type_Code_Review          -0.0006074907          -0.053639019
+bounty_type_Design                0.0528567389           0.032919342
+bounty_type_Documentation         0.0745672579          -0.012766496
+bounty_type_Feature              -0.0898344453           0.103500524
+bounty_type_Improvement           0.0782737511           0.026364158
+bounty_type_Other                 0.0029092566           0.089879029
+bounty_type_Project              -0.0044043074          -0.040267252
+bounty_type_Security             -0.0569695111           0.067362727
+issue_timeout                    -0.0127494605          -0.167488829
+experience_level_Beginner        -0.0484625719           0.007343897
+experience_level_Advanced         0.0343675352           0.150466321
+experience_level_Intermediate     0.0219563031          -0.096444975
+repo_forks_count                 -0.0690244006           0.054274480
+repo_language_JavaScript         -0.0851676589           0.035704626
+repo_language_TypeScript         -0.0260145042          -0.137989309
+repo_language_Others              0.0521503999           0.094290495
+repo_stargazers_count            -0.0408868380           0.048889006
+repo_open_issues_count           -0.0619004144          -0.026282495
+code_additions                   -0.0042525768           0.330010672
+code_deletions                    0.0013584483           0.170576598
+code_changed_files               -0.0694245197           0.295378360
+code_finish_time                  1.0000000000          -0.036579325
+issue_len_description            -0.0365793247           1.000000000
+fulfillments_len                  0.0112687077           0.117238905
+bounty_num                       -0.0718242437           0.011237636
+bounty_change_num                -0.0550090217          -0.009628018
+code_smells_log                  -0.0035961942          -0.054728560
+ncloc_log                        -0.0074670874          -0.054133757
+complexity_log                   -0.0058953554          -0.051115686
+                              fulfillments_len    bounty_num bounty_change_num
+project_length_Hours              -0.086431870  0.0316216390       0.039202686
+project_length_Days                0.043964593 -0.0009893675      -0.004506917
+project_length_Weeks               0.127359932 -0.0878749543      -0.099971893
+bounty_type_Bug                   -0.044391042  0.0632728525      -0.014473786
+bounty_type_Code_Review            0.102959504 -0.0694568839      -0.053162016
+bounty_type_Design                 0.179647810 -0.0945109330      -0.106640630
+bounty_type_Documentation         -0.067607072 -0.1724468849      -0.146624223
+bounty_type_Feature                0.097166832  0.0537309723       0.043276400
+bounty_type_Improvement           -0.093132773 -0.1127130315      -0.090040622
+bounty_type_Other                  0.168716598 -0.1448597746      -0.169282388
+bounty_type_Project               -0.018036701  0.0592739272       0.060425431
+bounty_type_Security               0.035803934 -0.0673009305      -0.048515287
+issue_timeout                     -0.046098600  0.0252337207       0.078701339
+experience_level_Beginner          0.007682865  0.0067106757      -0.039447475
+experience_level_Advanced          0.023368028 -0.1450722897      -0.162604367
+experience_level_Intermediate     -0.020717513  0.0808892022       0.131868117
+repo_forks_count                  -0.166790842  0.6560658790       0.638518941
+repo_language_JavaScript          -0.183596209  0.3584243568       0.288222491
+repo_language_TypeScript           0.109891299  0.0719048674       0.142760820
+repo_language_Others              -0.067948053 -0.2697597524      -0.261352108
+repo_stargazers_count             -0.178459837  0.5923419113       0.564878416
+repo_open_issues_count            -0.160826860  0.6440629143       0.562911390
+code_additions                     0.044826290 -0.1399225190      -0.120887880
+code_deletions                     0.030733114 -0.0910709825      -0.110305408
+code_changed_files                 0.069919538 -0.0231556775      -0.029001392
+code_finish_time                   0.011268708 -0.0718242437      -0.055009022
+issue_len_description              0.117238905  0.0112376358      -0.009628018
+fulfillments_len                   1.000000000 -0.1676924027      -0.147332907
+bounty_num                        -0.167692403  1.0000000000       0.885664547
+bounty_change_num                 -0.147332907  0.8856645465       1.000000000
+code_smells_log                    0.003419170  0.2217058448       0.276335564
+ncloc_log                         -0.004180895  0.2283777789       0.278136171
+complexity_log                     0.002178273  0.2387827859       0.287112247
+                              code_smells_log    ncloc_log complexity_log
+project_length_Hours             -0.073471023 -0.073690890   -0.081533145
+project_length_Days               0.074383520  0.078202406    0.085024102
+project_length_Weeks              0.007050325 -0.002762935    0.001046768
+bounty_type_Bug                  -0.074998075 -0.083786753   -0.084763258
+bounty_type_Code_Review          -0.033699700 -0.034318727   -0.034071225
+bounty_type_Design                0.032928912  0.026637293    0.027060598
+bounty_type_Documentation        -0.147796242 -0.150970147   -0.157144414
+bounty_type_Feature               0.282515076  0.294338627    0.304022513
+bounty_type_Improvement          -0.140289204 -0.122454569   -0.115794356
+bounty_type_Other                -0.100800909 -0.107123557   -0.106945869
+bounty_type_Project               0.067399401  0.077605163    0.066412947
+bounty_type_Security             -0.031186641 -0.041080241   -0.040677630
+issue_timeout                     0.087756659  0.089159205    0.095657295
+experience_level_Beginner        -0.078046732 -0.084542282   -0.090233356
+experience_level_Advanced        -0.075243632 -0.083936204   -0.078304765
+experience_level_Intermediate     0.113473595  0.124371307    0.125995280
+repo_forks_count                  0.145047968  0.140779654    0.145925138
+repo_language_JavaScript         -0.149895010 -0.176577009   -0.176642078
+repo_language_TypeScript          0.304072372  0.307873675    0.318573752
+repo_language_Others              0.083518532  0.112040536    0.101391893
+repo_stargazers_count             0.136464276  0.132085184    0.139073765
+repo_open_issues_count            0.135725460  0.134175983    0.135094141
+code_additions                   -0.078616363 -0.088781446   -0.084950551
+code_deletions                   -0.115012785 -0.117640291   -0.114440246
+code_changed_files               -0.013980393 -0.014709693   -0.010801100
+code_finish_time                 -0.003596194 -0.007467087   -0.005895355
+issue_len_description            -0.054728560 -0.054133757   -0.051115686
+fulfillments_len                  0.003419170 -0.004180895    0.002178273
+bounty_num                        0.221705845  0.228377779    0.238782786
+bounty_change_num                 0.276335564  0.278136171    0.287112247
+code_smells_log                   1.000000000  0.987609311    0.986990431
+ncloc_log                         0.987609311  1.000000000    0.993247772
+complexity_log                    0.986990431  0.993247772    1.000000000
+[1] "Spearman Delete:"
+[1] "project_length_Days"       "experience_level_Beginner"
+[3] "repo_stargazers_count"     "repo_open_issues_count"   
+[5] "code_changed_files"        "bounty_num"               
+[7] "code_smells_log"           "complexity_log"           
+[1] "Spearman Save:"
+ [1] "project_length_Hours"          "project_length_Weeks"         
+ [3] "bounty_type_Bug"               "bounty_type_Code_Review"      
+ [5] "bounty_type_Design"            "bounty_type_Documentation"    
+ [7] "bounty_type_Feature"           "bounty_type_Improvement"      
+ [9] "bounty_type_Other"             "bounty_type_Project"          
+[11] "bounty_type_Security"          "issue_timeout"                
+[13] "experience_level_Advanced"     "experience_level_Intermediate"
+[15] "repo_forks_count"              "repo_language_JavaScript"     
+[17] "repo_language_TypeScript"      "repo_language_Others"         
+[19] "code_additions"                "code_deletions"               
+[21] "code_finish_time"              "issue_len_description"        
+[23] "fulfillments_len"              "bounty_change_num"            
+[25] "ncloc_log"                    
+[1] "Redundant Results:"
+
+Redundancy Analysis
+
+~.
+
+n: 507 	p: 25 	nk: 0 
+
+Number of NAs:	 0 
+
+Transformation of target variables forced to be linear
+
+R-squared cutoff: 0.9 	Type: ordinary 
+
+R^2 with which each variable can be predicted from all other variables:
+
+         project_length_Hours          project_length_Weeks 
+                        0.320                         0.155 
+              bounty_type_Bug       bounty_type_Code_Review 
+                        0.275                         0.085 
+           bounty_type_Design     bounty_type_Documentation 
+                        0.299                         0.210 
+          bounty_type_Feature       bounty_type_Improvement 
+                        0.546                         0.286 
+            bounty_type_Other           bounty_type_Project 
+                        0.287                         0.029 
+         bounty_type_Security                 issue_timeout 
+                        0.167                         0.330 
+    experience_level_Advanced experience_level_Intermediate 
+                        0.358                         0.433 
+             repo_forks_count      repo_language_JavaScript 
+                        0.541                         0.772 
+     repo_language_TypeScript          repo_language_Others 
+                        0.749                         0.747 
+               code_additions                code_deletions 
+                        0.524                         0.448 
+             code_finish_time         issue_len_description 
+                        0.063                         0.199 
+             fulfillments_len             bounty_change_num 
+                        0.371                         0.562 
+                    ncloc_log 
+                        0.268 
+
+No redundant variables
+
+[1] "Final Save Variables:"
+ [1] "project_length_Hours"          "project_length_Weeks"         
+ [3] "bounty_type_Bug"               "bounty_type_Code_Review"      
+ [5] "bounty_type_Design"            "bounty_type_Documentation"    
+ [7] "bounty_type_Feature"           "bounty_type_Improvement"      
+ [9] "bounty_type_Other"             "bounty_type_Project"          
+[11] "bounty_type_Security"          "issue_timeout"                
+[13] "experience_level_Advanced"     "experience_level_Intermediate"
+[15] "repo_forks_count"              "repo_language_JavaScript"     
+[17] "repo_language_TypeScript"      "repo_language_Others"         
+[19] "code_additions"                "code_deletions"               
+[21] "code_finish_time"              "issue_len_description"        
+[23] "fulfillments_len"              "bounty_change_num"            
+[25] "ncloc_log"                    

@@ -1,0 +1,55 @@
+=== Bootstrap Iteration 325 ===
+
+Family: gaussian 
+Link function: identity 
+
+Formula:
+value_in_usdt ~ project_length_Hours + project_length_Weeks + 
+    bounty_type_Bug + bounty_type_Code_Review + bounty_type_Design + 
+    bounty_type_Documentation + bounty_type_Feature + bounty_type_Improvement + 
+    bounty_type_Other + bounty_type_Project + bounty_type_Security + 
+    issue_timeout + experience_level_Advanced + experience_level_Intermediate + 
+    repo_forks_count + repo_language_JavaScript + repo_language_TypeScript + 
+    repo_language_Others + code_additions + code_deletions + 
+    code_finish_time + issue_len_description + fulfillments_len + 
+    bounty_change_num + ncloc_log
+
+Parametric coefficients:
+                              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                    530.969    174.848   3.037  0.00252 ** 
+project_length_Hours          -381.492     46.528  -8.199 2.21e-15 ***
+project_length_Weeks           866.879    121.602   7.129 3.72e-12 ***
+bounty_type_Bug                -69.140     67.707  -1.021  0.30768    
+bounty_type_Code_Review       -588.221    247.758  -2.374  0.01798 *  
+bounty_type_Design             607.833    172.332   3.527  0.00046 ***
+bounty_type_Documentation       30.235     75.143   0.402  0.68759    
+bounty_type_Feature            -75.240     42.723  -1.761  0.07885 .  
+bounty_type_Improvement        -41.011     54.598  -0.751  0.45293    
+bounty_type_Other                0.121     95.883   0.001  0.99899    
+bounty_type_Project              0.000      0.000     NaN      NaN    
+bounty_type_Security           452.582    250.197   1.809  0.07109 .  
+issue_timeout                    3.404      5.085   0.669  0.50351    
+experience_level_Advanced      574.504     68.748   8.357 6.94e-16 ***
+experience_level_Intermediate   66.838     44.750   1.494  0.13594    
+repo_forks_count                -3.183     10.113  -0.315  0.75310    
+repo_language_JavaScript      -144.369     61.914  -2.332  0.02012 *  
+repo_language_TypeScript        16.230     71.155   0.228  0.81967    
+repo_language_Others          -171.556     63.775  -2.690  0.00739 ** 
+code_additions                  25.907      8.284   3.127  0.00187 ** 
+code_deletions                  11.079      6.721   1.649  0.09989 .  
+code_finish_time               -32.676     15.808  -2.067  0.03926 *  
+issue_len_description           12.675     14.125   0.897  0.36998    
+fulfillments_len                60.461     65.082   0.929  0.35335    
+bounty_change_num              -24.447     11.573  -2.112  0.03516 *  
+ncloc_log                       -3.723      4.014  -0.927  0.35417    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+
+Rank: 25/26
+R-sq.(adj) =   0.51   Deviance explained = 53.3%
+-REML =   3522  Scale est. = 1.0526e+05  n = 507
+
+Bootstrap R²: 0.5102182
+Original Data R²: 0.2837793
+Optimism: 0.2264389

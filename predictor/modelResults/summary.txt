@@ -1,0 +1,15 @@
+--- Model Performance Summary ---
+
+## Point Prediction Model Results
+
+| Model                               |      R² |   RMSE |   MAE |
+|:------------------------------------|--------:|-------:|------:|
+| GLM                                 |  0.4184 |  74.12 | 49.43 |
+| Linear Regression                   |  0.4165 |  74.21 | 49.59 |
+| Ridge Regression                    |  0.4186 |  73.84 | 49.12 |
+| Decision Tree                       |  0.6617 |  56.35 | 18.77 |
+| Random Forest                       |  0.7603 |  51.73 | 27.68 |
+| Support Vector Regression           |  0.3035 |  81.48 | 46.9  |
+| XGBoost                             |  0.5039 |  68.76 | 48.53 |
+| DNN                                 | -0.461  | 120.89 | 78.9  |
+

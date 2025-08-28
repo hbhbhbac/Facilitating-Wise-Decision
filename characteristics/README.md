@@ -1,4 +1,8 @@
 # characteristics
 
-- `show_characteristics_distribution.py`: Show the distribution of characteristics for bounty issues (RQ2).
-- `show_amount_change.py`: Displays the distribution of issues with changed bounty amounts (RQ3).
+- `run.py`:  Analysze data and show statistic results of RQ1, RQ2 and RQ3.
+- `data`: Preprocessed data.
+- `results`: Statistic results.
+
+To execute `run.py`, unzip `bounties_gitcoin_214.zip` in the rawData folder first and then execute `python run.py`
+
