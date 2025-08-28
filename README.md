@@ -4,10 +4,9 @@
 
 ```shell
 ├─characteristics
-├─detector
+├─predictor
 │  └─modelResults
 ├─model
-│  ├─internalCsv
 │  └─modelSummarys
 ├─motivation
 │  ├─commits
@@ -27,8 +26,8 @@
 - **rawData:** Source data on Gitcoin and data set statistics related information.
 - **motivation:** Statistical result in RQ1.
 - **characteristics:** Statistical result in RQ2 and RQ3.
-- **model:** The GAM model we established in RQ4.
-- **detector:** The detector we constructed in RQ5.
+- **model:** The regression model we established in RQ4.
+- **predictor:** The predictor we constructed in RQ5.
 
 **Note**: Each folder contains a README.md file to guide you through its contents.
 
