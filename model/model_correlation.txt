@@ -543,24 +543,24 @@ code_smells_log                   1.000000000  0.987609311    0.986990431
 ncloc_log                         0.987609311  1.000000000    0.993247772
 complexity_log                    0.986990431  0.993247772    1.000000000
 [1] "Spearman Delete:"
-[1] "project_length_Days"       "experience_level_Beginner"
-[3] "repo_stargazers_count"     "repo_open_issues_count"   
-[5] "code_changed_files"        "bounty_num"               
-[7] "code_smells_log"           "complexity_log"           
+[1] "project_length_Days"           "experience_level_Intermediate"
+[3] "repo_stargazers_count"         "repo_forks_count"             
+[5] "code_changed_files"            "bounty_num"                   
+[7] "code_smells_log"               "complexity_log"               
 [1] "Spearman Save:"
- [1] "project_length_Hours"          "project_length_Weeks"         
- [3] "bounty_type_Bug"               "bounty_type_Code_Review"      
- [5] "bounty_type_Design"            "bounty_type_Documentation"    
- [7] "bounty_type_Feature"           "bounty_type_Improvement"      
- [9] "bounty_type_Other"             "bounty_type_Project"          
-[11] "bounty_type_Security"          "issue_timeout"                
-[13] "experience_level_Advanced"     "experience_level_Intermediate"
-[15] "repo_forks_count"              "repo_language_JavaScript"     
-[17] "repo_language_TypeScript"      "repo_language_Others"         
-[19] "code_additions"                "code_deletions"               
-[21] "code_finish_time"              "issue_len_description"        
-[23] "fulfillments_len"              "bounty_change_num"            
-[25] "ncloc_log"                    
+ [1] "project_length_Hours"      "project_length_Weeks"     
+ [3] "bounty_type_Bug"           "bounty_type_Code_Review"  
+ [5] "bounty_type_Design"        "bounty_type_Documentation"
+ [7] "bounty_type_Feature"       "bounty_type_Improvement"  
+ [9] "bounty_type_Other"         "bounty_type_Project"      
+[11] "bounty_type_Security"      "issue_timeout"            
+[13] "experience_level_Beginner" "experience_level_Advanced"
+[15] "repo_language_JavaScript"  "repo_language_TypeScript" 
+[17] "repo_language_Others"      "repo_open_issues_count"   
+[19] "code_additions"            "code_deletions"           
+[21] "code_finish_time"          "issue_len_description"    
+[23] "fulfillments_len"          "bounty_change_num"        
+[25] "ncloc_log"                
 [1] "Redundant Results:"
 
 Redundancy Analysis
@@ -577,46 +577,38 @@ R-squared cutoff: 0.9 	Type: ordinary
 
 R^2 with which each variable can be predicted from all other variables:
 
-         project_length_Hours          project_length_Weeks 
-                        0.320                         0.155 
-              bounty_type_Bug       bounty_type_Code_Review 
-                        0.275                         0.085 
-           bounty_type_Design     bounty_type_Documentation 
-                        0.299                         0.210 
-          bounty_type_Feature       bounty_type_Improvement 
-                        0.546                         0.286 
-            bounty_type_Other           bounty_type_Project 
-                        0.287                         0.029 
-         bounty_type_Security                 issue_timeout 
-                        0.167                         0.330 
-    experience_level_Advanced experience_level_Intermediate 
-                        0.358                         0.433 
-             repo_forks_count      repo_language_JavaScript 
-                        0.541                         0.772 
-     repo_language_TypeScript          repo_language_Others 
-                        0.749                         0.747 
-               code_additions                code_deletions 
-                        0.524                         0.448 
-             code_finish_time         issue_len_description 
-                        0.063                         0.199 
-             fulfillments_len             bounty_change_num 
-                        0.371                         0.562 
-                    ncloc_log 
-                        0.268 
+     project_length_Hours      project_length_Weeks           bounty_type_Bug 
+                    0.319                     0.155                     0.281 
+  bounty_type_Code_Review        bounty_type_Design bounty_type_Documentation 
+                    0.084                     0.300                     0.216 
+      bounty_type_Feature   bounty_type_Improvement         bounty_type_Other 
+                    0.553                     0.286                     0.282 
+      bounty_type_Project      bounty_type_Security             issue_timeout 
+                    0.029                     0.168                     0.336 
+experience_level_Beginner experience_level_Advanced  repo_language_JavaScript 
+                    0.263                     0.197                     0.761 
+ repo_language_TypeScript      repo_language_Others    repo_open_issues_count 
+                    0.739                     0.716                     0.496 
+           code_additions            code_deletions          code_finish_time 
+                    0.529                     0.448                     0.061 
+    issue_len_description          fulfillments_len         bounty_change_num 
+                    0.184                     0.372                     0.519 
+                ncloc_log 
+                    0.269 
 
 No redundant variables
 
 [1] "Final Save Variables:"
- [1] "project_length_Hours"          "project_length_Weeks"         
- [3] "bounty_type_Bug"               "bounty_type_Code_Review"      
- [5] "bounty_type_Design"            "bounty_type_Documentation"    
- [7] "bounty_type_Feature"           "bounty_type_Improvement"      
- [9] "bounty_type_Other"             "bounty_type_Project"          
-[11] "bounty_type_Security"          "issue_timeout"                
-[13] "experience_level_Advanced"     "experience_level_Intermediate"
-[15] "repo_forks_count"              "repo_language_JavaScript"     
-[17] "repo_language_TypeScript"      "repo_language_Others"         
-[19] "code_additions"                "code_deletions"               
-[21] "code_finish_time"              "issue_len_description"        
-[23] "fulfillments_len"              "bounty_change_num"            
-[25] "ncloc_log"                    
+ [1] "project_length_Hours"      "project_length_Weeks"     
+ [3] "bounty_type_Bug"           "bounty_type_Code_Review"  
+ [5] "bounty_type_Design"        "bounty_type_Documentation"
+ [7] "bounty_type_Feature"       "bounty_type_Improvement"  
+ [9] "bounty_type_Other"         "bounty_type_Project"      
+[11] "bounty_type_Security"      "issue_timeout"            
+[13] "experience_level_Beginner" "experience_level_Advanced"
+[15] "repo_language_JavaScript"  "repo_language_TypeScript" 
+[17] "repo_language_Others"      "repo_open_issues_count"   
+[19] "code_additions"            "code_deletions"           
+[21] "code_finish_time"          "issue_len_description"    
+[23] "fulfillments_len"          "bounty_change_num"        
+[25] "ncloc_log"                

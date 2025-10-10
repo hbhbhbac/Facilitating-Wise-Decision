@@ -7,7 +7,7 @@ library(Hmisc)
 library(boot)
 
 if (!dir.exists("model_summarys")) {
-  dir.create("model_summarys")
+    dir.create("model_summarys")
 }
 
 df <- read.csv("data.csv")
@@ -19,6 +19,11 @@ df$complexity[is.na(df$complexity)] <- 0
 df$code_smells_log <- log(df$code_smells + 1)
 df$ncloc_log <- log(df$ncloc + 1)
 df$complexity_log <- log(df$complexity + 1)
+
+response_var <- "value_in_usdt"
+df$value_in_usdt_log <- log(df[[response_var]] + 1)
+response_var_log <- "value_in_usdt_log"
+
 
 var_list <- c(
     'project_length_Hours', 'project_length_Days',
@@ -33,7 +38,8 @@ var_list <- c(
     'code_additions', 'code_deletions',
     'code_changed_files', 'code_finish_time', 'issue_len_description',
     'fulfillments_len', 'bounty_num', 'bounty_change_num',
-    'code_smells_log', 'ncloc_log', 'complexity_log'
+    'code_smells_log', 'ncloc_log'
+    , 'complexity_log'
 )
 
 
@@ -50,29 +56,29 @@ high_cor_vars <- high_cor_vars[high_cor_vars[,1] != high_cor_vars[,2], ]
 
 high_cor_groups <- list()
 if (nrow(high_cor_vars) > 0) {
-  for (i in 1:nrow(high_cor_vars)) {
-    var1 <- rownames(correlation_matrix)[high_cor_vars[i, 1]]
-    var2 <- colnames(correlation_matrix)[high_cor_vars[i, 2]]
-    
-    found <- FALSE
-    for (j in seq_along(high_cor_groups)) {
-      if (var1 %in% high_cor_groups[[j]] || var2 %in% high_cor_groups[[j]]) {
-        high_cor_groups[[j]] <- unique(c(high_cor_groups[[j]], var1, var2))
-        found <- TRUE
-        break
-      }
+    for (i in 1:nrow(high_cor_vars)) {
+        var1 <- rownames(correlation_matrix)[high_cor_vars[i, 1]]
+        var2 <- colnames(correlation_matrix)[high_cor_vars[i, 2]]
+        
+        found <- FALSE
+        for (j in seq_along(high_cor_groups)) {
+            if (var1 %in% high_cor_groups[[j]] || var2 %in% high_cor_groups[[j]]) {
+                high_cor_groups[[j]] <- unique(c(high_cor_groups[[j]], var1, var2))
+                found <- TRUE
+                break
+            }
+        }
+        if (!found) {
+            high_cor_groups[[length(high_cor_groups) + 1]] <- c(var1, var2)
+        }
     }
-    if (!found) {
-      high_cor_groups[[length(high_cor_groups) + 1]] <- c(var1, var2)
-    }
-  }
 }
 
-set.seed(100) 
+set.seed(1000) 
 remove_vars_cor <- c()
 for (group in high_cor_groups) {
-  keep_var <- sample(group, 1) 
-  remove_vars_cor <- c(remove_vars_cor, setdiff(group, keep_var)) 
+    keep_var <- sample(group, 1) 
+    remove_vars_cor <- c(remove_vars_cor, setdiff(group, keep_var)) 
 }
 
 
@@ -85,7 +91,7 @@ capture.output(selected_vars_cor, file = "model_correlation.txt", append=TRUE)
 
 png("Hierarchical.png", width = 800, height = 600)
 corrplot(correlation_matrix, method = "circle", type = "upper",
-         tl.col = "black", tl.cex = 0.7, diag = FALSE)
+          tl.col = "black", tl.cex = 0.7, diag = FALSE)
 dev.off()
 
 
@@ -111,15 +117,13 @@ capture.output('Final Save Variables:', file = "model_correlation.txt", append=T
 capture.output(final_vars, file = "model_correlation.txt", append=TRUE)
 
 
-response_var <- "value_in_usdt"
-gam_formula <- as.formula(paste(response_var, "~", paste(final_vars, collapse = " + ")))
-
-
-original_model <- gam(gam_formula, data = df, method = "REML")
-
-
+gam_formula <- as.formula(paste(response_var_log, "~", paste(final_vars, collapse = " + ")))
+original_model <- glm(gam_formula, data = df, family = gaussian)
 original_summary <- summary(original_model)
-original_r2 <- original_summary$r.sq
+null_model <- glm(as.formula(paste(response_var_log, "~ 1")), data = df, family = gaussian)
+original_r2 <- 1 - (original_model$deviance / null_model$deviance)
+
+
 n_obs <- nrow(df)
 
 
@@ -136,31 +140,34 @@ for (i in 1:n_boot) {
         boot_data <- df[boot_indices, ]
 
 
-        boot_model <- gam(gam_formula, data = boot_data, method = "REML")
+        boot_model <- glm(gam_formula, data = boot_data, family = gaussian)
+        
+        boot_null_model <- glm(as.formula(paste(response_var_log, "~ 1")), data = boot_data, family = gaussian)
+        boot_r2 <- 1 - (boot_model$deviance / boot_null_model$deviance)
 
-        boot_r2 <- summary(boot_model)$r.sq
-
+        
         pred_orig <- predict(boot_model, newdata = df)
-        ss_total <- sum((df[[response_var]] - mean(df[[response_var]]))^2, na.rm = TRUE)
-        ss_residual <- sum((df[[response_var]] - pred_orig)^2, na.rm = TRUE)
+        
+
+        ss_total <- sum((df[[response_var_log]] - mean(df[[response_var_log]]))^2, na.rm = TRUE)
+        ss_residual <- sum((df[[response_var_log]] - pred_orig)^2, na.rm = TRUE)
         r2_orig <- 1 - (ss_residual / ss_total)
         
-
         optimism_values[i] <- boot_r2 - r2_orig
         
-
+        
         capture.output(
-          cat("=== Bootstrap Iteration", i, "===\n"),
-          print(summary(boot_model)),
-          cat("\nBootstrap R²:", boot_r2),
-          cat("\nOriginal Data R²:", r2_orig),
-          cat("\nOptimism:", optimism_values[i]),
-          file = paste0("model_summarys/model_", sprintf("%04d", i), ".txt"))
+            cat("=== Bootstrap Iteration", i, "===\n"),
+            print(summary(boot_model)),
+            cat("\nBootstrap R²:", boot_r2),
+            cat("\nOriginal Data R²:", r2_orig),
+            cat("\nOptimism:", optimism_values[i]),
+            file = paste0("model_summarys/model_", sprintf("%04d", i), ".txt"))
     }, error = function(e) {
         message("Error in iteration ", i, ": ", conditionMessage(e))
     })
     
-
+    
     setTxtProgressBar(pb, i)
 }
 close(pb)
@@ -171,7 +178,7 @@ adjusted_r2 <- original_r2 - average_optimism
 
 
 capture.output(
-    cat("=== Final Model Summary ===\n"),
+    cat("=== Final Model Summary (GLM with Log-Transformed Y) ===\n"),
     print(summary(original_model)),
     cat("\n\n=== Bootstrap Validation Results ===\n"),
     cat("Original R²:", original_r2, "\n"),
@@ -181,7 +188,7 @@ capture.output(
     file = "model_summary.txt"
 )
 
-cat("\n=== Final Results ===")
+cat("\n=== Final Results (GLM with Log-Transformed Y) ===")
 cat("\nOriginal R²:", original_r2)
 cat("\nAverage Optimism:", average_optimism)
 cat("\nOptimism-Adjusted R²:", adjusted_r2)
